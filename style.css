@@ -82,6 +82,13 @@ img{
 
     padding:80px 8%;
     gap:60px;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(255,70,85,.08),
+            transparent 40%
+        );
 }
 
 .hero-content{
@@ -89,8 +96,19 @@ img{
 }
 
 .hero-content h1{
-    font-size:3.5rem;
+
+    font-size:3.8rem;
+
     margin-bottom:10px;
+
+    background:linear-gradient(
+        90deg,
+        #ffffff,
+        #ff4655
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
 }
 
 .hero-content h2{
@@ -146,14 +164,19 @@ img{
 }
 
 .hero-image img{
-    width:350px;
-    height:350px;
+    width:320px;
+    height:320px;
 
     object-fit:cover;
+
+    object-position:center 20%;
 
     border-radius:50%;
 
     border:5px solid #ff4655;
+
+    box-shadow:
+        0 0 30px rgba(255,70,85,.35);
 }
 
 /* =========================
@@ -165,9 +188,34 @@ img{
 }
 
 .section-title{
-    font-size:2rem;
+
+    font-size:2.2rem;
+
+    font-weight:700;
+
     margin-bottom:40px;
+
     color:#ff4655;
+}
+
+/* =========================
+   PROJECT CATEGORY
+========================= */
+
+.project-category{
+
+    color:#ff4655;
+
+    font-size:1.4rem;
+
+    font-weight:600;
+
+    margin-top:50px;
+    margin-bottom:25px;
+
+    border-left:4px solid #ff4655;
+
+    padding-left:15px;
 }
 
 /* =========================
@@ -194,23 +242,39 @@ img{
 }
 
 .project-card{
+
     background:#171b24;
 
     border-radius:16px;
+
     overflow:hidden;
 
-    transition:0.3s;
     border:1px solid #232834;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
 }
 
 .project-card:hover{
-    transform:translateY(-5px);
+
+    transform:translateY(-8px);
+
+    box-shadow:
+        0 10px 30px rgba(255,70,85,.15);
 }
 
 .project-card img{
     width:100%;
     height:220px;
+
     object-fit:cover;
+
+    transition:.4s ease;
+}
+
+.project-card:hover img{
+    transform:scale(1.03);
 }
 
 .project-content{
@@ -241,10 +305,14 @@ img{
     border-radius:8px;
 
     transition:0.3s;
+
+    font-weight:600;
 }
 
 .card-btn:hover{
     background:#ff5d6a;
+
+    transform:translateY(-2px);
 }
 
 /* =========================
@@ -271,7 +339,11 @@ img{
 }
 
 .gallery-item:hover{
-    transform:scale(1.03);
+
+    transform:scale(1.05);
+
+    box-shadow:
+        0 10px 25px rgba(255,70,85,.15);
 }
 
 /* =========================
@@ -286,6 +358,11 @@ img{
     padding:30px;
 
     border:1px solid #232834;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.15);
+
+    max-width:700px;
 }
 
 .contact-box p{
@@ -357,6 +434,64 @@ img{
 }
 
 /* =========================
+   STATS
+========================= */
+
+.stats-section{
+
+    padding:0 8% 80px;
+}
+
+.stats-container{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+}
+
+.stat-card{
+
+    background:#171b24;
+
+    border:1px solid #232834;
+
+    border-radius:16px;
+
+    padding:30px;
+
+    text-align:center;
+
+    transition:.3s;
+}
+
+.stat-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 10px 25px rgba(255,70,85,.15);
+}
+
+.stat-card h3{
+
+    font-size:2.5rem;
+
+    color:#ff4655;
+
+    margin-bottom:10px;
+}
+
+.stat-card p{
+
+    color:#b5b5b5;
+
+    font-size:1rem;
+}
+
+/* =========================
    MOBILE
 ========================= */
 
@@ -410,9 +545,60 @@ img{
 
     text-align:center;
 
-    padding:30px;
+    padding:40px 20px;
 
     border-top:1px solid #232834;
 
     color:#888;
+
+    background:#12151d;
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-title{
+
+    margin-top:35px;
+    margin-bottom:20px;
+
+    color:#ffffff;
+
+    font-size:1.3rem;
+}
+
+.skills-container{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+}
+
+.skill-badge{
+
+    padding:10px 18px;
+
+    background:#171b24;
+
+    border:1px solid #232834;
+
+    border-radius:30px;
+
+    color:#ffffff;
+
+    font-size:.95rem;
+
+    transition:.3s;
+}
+
+.skill-badge:hover{
+
+    background:#ff4655;
+
+    border-color:#ff4655;
+
+    transform:translateY(-3px);
 }
