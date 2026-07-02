@@ -11,6 +11,32 @@
 </head>
 <body>
 
+<!-- =========================
+     LOADING SCREEN
+========================= -->
+
+<div id="loader">
+
+    <div class="loader-content">
+
+        <div class="loader-logo">
+            AdonisMax
+        </div>
+
+        <div class="loader-subtitle">
+            UI/UX Designer • Web Developer
+        </div>
+
+        <div class="loader-bar">
+
+            <div class="loader-progress"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
 <!-- NAVBAR -->
 
 <nav class="navbar">
@@ -32,7 +58,7 @@
 
 <!-- HERO -->
 
-<section id="home" class="hero">
+<section id="home" class="hero reveal">
 
 <div class="hero-content">
 
@@ -80,27 +106,59 @@
 
 <!-- STATS -->
 
-<section class="stats-section">
+<section class="stats-section reveal">
 
     <div class="stats-container">
 
-        <div class="stat-card">
-            <h3>2+</h3>
+        <div class="stat-card reveal"
+            data-delay="0">
+            <h3
+                class="counter"
+                data-target="2"
+                data-suffix="+">
+
+                0
+
+            </h3>
             <p>Web Projects</p>
         </div>
 
-        <div class="stat-card">
-            <h3>1</h3>
+        <div class="stat-card reveal"
+            data-delay="150">
+            <h3
+                class="counter"
+                data-target="1"
+                data-suffix="">
+
+                0
+
+            </h3>
             <p>UI/UX Case Study</p>
         </div>
 
-        <div class="stat-card">
-            <h3>21+</h3>
+        <div class="stat-card reveal"
+            data-delay="300">
+            <h3
+                class="counter"
+                data-target="21"
+                data-suffix="+">
+
+                0
+
+            </h3>
             <p>Graphic Designs</p>
         </div>
 
-        <div class="stat-card">
-            <h3>7+</h3>
+        <div class="stat-card reveal"
+            data-delay="450">
+            <h3
+                class="counter"
+                data-target="7"
+                data-suffix="+">
+
+                0
+
+            </h3>
             <p>T-Shirt Designs</p>
         </div>
 
@@ -110,7 +168,7 @@
 
 <!-- ABOUT -->
 
-<section id="about" class="section">
+<section id="about" class="section reveal">
 
     <h2 class="section-title">
         About Me
@@ -172,7 +230,7 @@
 
 <!-- PROJECTS -->
 
-<section id="projects" class="section">
+<section id="projects" class="section reveal">
 
     <h2 class="section-title">
         Featured Projects
@@ -184,7 +242,8 @@
 
     <div class="project-grid">
 
-        <div class="project-card">
+        <div class="project-card reveal"
+            data-delay="0">
 
             <img src="assets/projects/tiket/cover.png"
                 alt="Sistem Informasi Tiket GKJ WPM">
@@ -212,7 +271,8 @@
 
         </div>
 
-        <div class="project-card">
+        <div class="project-card reveal"
+            data-delay="150">
 
             <img src="assets/projects/fixora/cover.png"
                 alt="FIXORA">
@@ -241,7 +301,8 @@
 
         </div>
 
-        <div class="project-card">
+        <div class="project-card reveal"
+            data-delay="300">
 
             <img src="assets/projects/hospicare/cover.png"
                 alt="HOSPICARE">
@@ -278,7 +339,41 @@
 
     <div class="project-grid">
 
-        <div class="project-card">
+        <div class="project-card reveal"
+            data-delay="0">
+
+            <img src="assets/projects/assettrack/cover.png"
+                alt="AssetTrack">
+
+            <div class="project-content">
+
+                <h3>AssetTrack — Smart IT Asset Management System</h3>
+
+                <p>
+                    Studi kasus UI/UX yang dirancang untuk membantu tim IT
+                    mengelola inventaris aset secara terpusat, mulai dari
+                    pendataan aset, monitoring kondisi, maintenance,
+                    hingga pelaporan.
+                </p>
+
+                <p class="tech-stack">
+                    Figma • UI/UX Design • Design System • Prototyping • Case Study
+                </p>
+
+                <a href="assets/projects/assettrack/presentasi.pdf"
+                target="_blank"
+                class="card-btn">
+
+                    Lihat Case Study
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="project-card reveal"
+            data-delay="150">
 
             <img src="assets/projects/dentcare/cover.png"
                 alt="DentCare">
@@ -313,7 +408,7 @@
 
 <!-- POSTER -->
 
-<section id="posters" class="section">
+<section id="posters" class="section reveal">
 
     <h2 class="section-title">
         Graphic Design Portfolio
@@ -321,27 +416,27 @@
 
     <div class="gallery">
 
-        <img src="assets/posters/poster1.webp" class="gallery-item" alt="Poster 1">
-        <img src="assets/posters/poster2.webp" class="gallery-item" alt="Poster 2">
-        <img src="assets/posters/poster3.webp" class="gallery-item" alt="Poster 3">
-        <img src="assets/posters/poster4.webp" class="gallery-item" alt="Poster 4">
-        <img src="assets/posters/poster5.webp" class="gallery-item" alt="Poster 5">
-        <img src="assets/posters/poster6.webp" class="gallery-item" alt="Poster 6">
-        <img src="assets/posters/poster7.webp" class="gallery-item" alt="Poster 7">
-        <img src="assets/posters/poster8.webp" class="gallery-item" alt="Poster 8">
-        <img src="assets/posters/poster9.webp" class="gallery-item" alt="Poster 9">
-        <img src="assets/posters/poster10.webp" class="gallery-item" alt="Poster 10">
-        <img src="assets/posters/poster11.webp" class="gallery-item" alt="Poster 11">
-        <img src="assets/posters/poster12.webp" class="gallery-item" alt="Poster 12">
-        <img src="assets/posters/poster13.webp" class="gallery-item" alt="Poster 13">
-        <img src="assets/posters/poster14.webp" class="gallery-item" alt="Poster 14">
-        <img src="assets/posters/poster15.webp" class="gallery-item" alt="Poster 15">
-        <img src="assets/posters/poster16.webp" class="gallery-item" alt="Poster 16">
-        <img src="assets/posters/poster17.webp" class="gallery-item" alt="Poster 17">
-        <img src="assets/posters/poster18.webp" class="gallery-item" alt="Poster 18">
-        <img src="assets/posters/poster19.webp" class="gallery-item" alt="Poster 19">
-        <img src="assets/posters/poster20.webp" class="gallery-item" alt="Poster 20">
-        <img src="assets/posters/poster21.webp" class="gallery-item" alt="Poster 21">
+        <img src="assets/posters/poster1.webp" class="gallery-item reveal" alt="Poster 1">
+        <img src="assets/posters/poster2.webp" class="gallery-item reveal" alt="Poster 2">
+        <img src="assets/posters/poster3.webp" class="gallery-item reveal" alt="Poster 3">
+        <img src="assets/posters/poster4.webp" class="gallery-item reveal" alt="Poster 4">
+        <img src="assets/posters/poster5.webp" class="gallery-item reveal" alt="Poster 5">
+        <img src="assets/posters/poster6.webp" class="gallery-item reveal" alt="Poster 6">
+        <img src="assets/posters/poster7.webp" class="gallery-item reveal" alt="Poster 7">
+        <img src="assets/posters/poster8.webp" class="gallery-item reveal" alt="Poster 8">
+        <img src="assets/posters/poster9.webp" class="gallery-item reveal" alt="Poster 9">
+        <img src="assets/posters/poster10.webp" class="gallery-item reveal" alt="Poster 10">
+        <img src="assets/posters/poster11.webp" class="gallery-item reveal" alt="Poster 11">
+        <img src="assets/posters/poster12.webp" class="gallery-item reveal" alt="Poster 12">
+        <img src="assets/posters/poster13.webp" class="gallery-item reveal" alt="Poster 13">
+        <img src="assets/posters/poster14.webp" class="gallery-item reveal" alt="Poster 14">
+        <img src="assets/posters/poster15.webp" class="gallery-item reveal" alt="Poster 15">
+        <img src="assets/posters/poster16.webp" class="gallery-item reveal" alt="Poster 16">
+        <img src="assets/posters/poster17.webp" class="gallery-item reveal" alt="Poster 17">
+        <img src="assets/posters/poster18.webp" class="gallery-item reveal" alt="Poster 18">
+        <img src="assets/posters/poster19.webp" class="gallery-item reveal" alt="Poster 19">
+        <img src="assets/posters/poster20.webp" class="gallery-item reveal" alt="Poster 20">
+        <img src="assets/posters/poster21.webp" class="gallery-item reveal" alt="Poster 21">
 
     </div>
 
@@ -349,7 +444,7 @@
 
 <!-- TSHIRT -->
 
-<section id="tshirt" class="section">
+<section id="tshirt" class="section reveal">
 
     <h2 class="section-title">
         T-Shirt Design
@@ -357,23 +452,23 @@
 
     <div class="gallery">
 
-        <img src="assets/tshirt/kaos1.webp" class="gallery-item" alt="Kaos 1">
-        <img src="assets/tshirt/kaos2.webp" class="gallery-item" alt="Kaos 2">
-        <img src="assets/tshirt/kaos3.webp" class="gallery-item" alt="Kaos 3">
-        <img src="assets/tshirt/kaos4.webp" class="gallery-item" alt="Kaos 4">
-        <img src="assets/tshirt/kaos5.webp" class="gallery-item" alt="Kaos 5">
-        <img src="assets/tshirt/kaos6.webp" class="gallery-item" alt="Kaos 6">
-        <img src="assets/tshirt/kaos7.webp" class="gallery-item" alt="Kaos 7">
-        <img src="assets/tshirt/kaos8.webp" class="gallery-item" alt="Kaos 8">
-        <img src="assets/tshirt/kaos9.webp" class="gallery-item" alt="Kaos 9">
-        <img src="assets/tshirt/kaos10.webp" class="gallery-item" alt="Kaos 10">
-        <img src="assets/tshirt/kaos11.webp" class="gallery-item" alt="Kaos 11">
+        <img src="assets/tshirt/kaos1.webp" class="gallery-item reveal" alt="Kaos 1">
+        <img src="assets/tshirt/kaos2.webp" class="gallery-item reveal" alt="Kaos 2">
+        <img src="assets/tshirt/kaos3.webp" class="gallery-item reveal" alt="Kaos 3">
+        <img src="assets/tshirt/kaos4.webp" class="gallery-item reveal" alt="Kaos 4">
+        <img src="assets/tshirt/kaos5.webp" class="gallery-item reveal" alt="Kaos 5">
+        <img src="assets/tshirt/kaos6.webp" class="gallery-item reveal" alt="Kaos 6">
+        <img src="assets/tshirt/kaos7.webp" class="gallery-item reveal" alt="Kaos 7">
+        <img src="assets/tshirt/kaos8.webp" class="gallery-item reveal" alt="Kaos 8">
+        <img src="assets/tshirt/kaos9.webp" class="gallery-item reveal" alt="Kaos 9">
+        <img src="assets/tshirt/kaos10.webp" class="gallery-item reveal" alt="Kaos 10">
+        <img src="assets/tshirt/kaos11.webp" class="gallery-item reveal" alt="Kaos 11">
 
     </div>
     
 </section>
 
-<section id="multimedia" class="section">
+<section id="multimedia" class="section reveal">
 
     <h2 class="section-title">
         Multimedia Portfolio
@@ -383,7 +478,8 @@
 
         <!-- Instagram -->
 
-        <div class="project-card">
+        <div class="project-card reveal"
+            data-delay="0">
 
             <img src="assets/multimedia/instagram-cover.png"
                  alt="Instagram Xpress Choir">
@@ -413,7 +509,8 @@
 
         <!-- YouTube -->
 
-        <div class="project-card">
+        <div class="project-card reveal"
+            data-delay="150">
 
             <img src="assets/multimedia/youtube-cover.png"
                  alt="YouTube GKJ WPM">
@@ -443,7 +540,8 @@
 
         <!-- Video Editing -->
 
-        <div class="project-card">
+        <div class="project-card reveal"
+            data-delay="300">
 
             <img src="assets/multimedia/editing-cover.png"
                  alt="Video Editing">
@@ -477,7 +575,7 @@
 
 <!-- CONTACT -->
 
-<section id="contact" class="section">
+<section id="contact" class="section reveal">
 
     <h2 class="section-title">
         Contact
